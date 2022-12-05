@@ -1,45 +1,44 @@
-**!! Atenção: Renomeie o seu repositório para (Tema)_(NomeDoProjeto). !!** 
-
+Grafos2_Dupla23_ResolucaoBeecrowd
 Temas:
  - Grafos1
  - Grafos2
- - PD
- - D&C
- - Greed
- - Final 
- 
+
  **!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: Grafos2_Labirinto-do-Minotauro !!**
- 
+
  (Apague essa seção)
 
-# NomedoProjeto
+# Grafos2 Dupla23 Resolução de Exercícios do Beecrowd
 
-**Número da Lista**: X<br>
-**Conteúdo da Disciplina**: XXXXXXXXXX<br>
+**Número da Dupla**: 23<br>
+**Conteúdo da Disciplina**: Grafos 2<br>
 
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 18/0105256  |  [Lucas da Cunha Andrade](https://github.com/nYCSTs) |
+| 18/0027352  |  [Rodrigo Carvalho dos Santos](https://github.com/Rocsantos) |
 
-## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+## Sobre
+Descreva os objetivos do seu projeto e como ele funciona.
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
 
-## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+## Instalação
+**Linguagem**: C++<br>
+> sudo apt install g++
 
-## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
+## Uso
+- Procure o número da questão e compile <br>```g++ [nome da questão].cpp -O2 -lm```
 
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+  - Caso queira adicionar a tag -o para nomear o arquivo executável<br>```g++ [nome da questão].cpp -o [nome do executável] -O2 -lm```
 
+- Após a compilação, rode o executável<br>```./a.out(ou nome do executável)```
 
+  - Caso queira já colocamos as entradas exemplo do beecrowd<br>```./a.out(ou nome do executável) < input[nome da questão].txt```
+
+## Outros
+
+Este é um trabalho que foi feito utilizando o conteúdo da aula de Projeto de Algoritmos, no conteúdo de Grafos 2
 
 
