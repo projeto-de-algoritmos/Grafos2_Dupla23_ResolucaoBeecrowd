@@ -19,6 +19,39 @@ pair<int, int> inicio, fim;
 char caminho[WHMAX][WHMAX];
 bool visited[WHMAX][WHMAX];
 
+int next_position(pair<int, int> position, int point, int move) {
+  int distancia = abs(position.first-fim.first) + abs(position.second-fim.second);
+  if(distancia > (movimentos-move)) {
+    return -1;
+  }
+  if(caminho[position.first][position.second] == SUJEIRA) {
+    ++point;
+  }
+  ++move;
+  pair<int, int> moves[4]{
+    make_pair(position.first-1, position.second),
+    make_pair(position.first, position.second-1),
+    make_pair(position.first+1, position.second),
+    make_pair(position.first, position.second+1)
+  };
+  int higher{-1}, next{0};
+  for(int i=0; i<4; i++) {
+    if((moves[i].first >= 0)
+    && (moves[i].first < linha)
+    && (moves[i].second >= 0)
+    && (moves[i].second < coluna)) {
+      next=next_position(moves[i], point, move);
+      if(higher < next) {
+        higher=next;
+      }
+    }
+  }
+  if(caminho[position.first][position.second]==ESTACAO)
+    return point;
+
+  return higher;
+}
+
 int main() {
   int i, j;
 	while(scanf("%d ", &sujeira) != EOF) {
@@ -36,7 +69,8 @@ int main() {
         }
 			}
 		}
-    cout<<inicio.first<<' '<<inicio.second<<' '<<fim.first<<' '<<fim.second<<END;
+    //cout<<inicio.first<<' '<<inicio.second<<' '<<fim.first<<' '<<fim.second<<END;
+    cout<<next_position(inicio,0,0)<<END;
 	}
 	return 0;
 }
