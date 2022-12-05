@@ -1,12 +1,3 @@
-Grafos2_Dupla23_ResolucaoBeecrowd
-Temas:
- - Grafos1
- - Grafos2
-
- **!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: Grafos2_Labirinto-do-Minotauro !!**
-
- (Apague essa seção)
-
 # Grafos2 Dupla23 Resolução de Exercícios do Beecrowd
 
 **Número da Dupla**: 23<br>
