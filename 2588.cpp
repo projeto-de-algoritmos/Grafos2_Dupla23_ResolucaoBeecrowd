@@ -20,6 +20,9 @@ char caminho[WHMAX][WHMAX];
 bool visited[WHMAX][WHMAX];
 
 int next_position(pair<int, int> position, int point, int move) {
+  if(caminho[position.first][position.second] == OBSTACULO) {
+    return -1;
+  }
   int distancia = abs(position.first-fim.first) + abs(position.second-fim.second);
   if(distancia > (movimentos-move)) {
     return -1;
