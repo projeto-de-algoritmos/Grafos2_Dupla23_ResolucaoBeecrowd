@@ -14,7 +14,8 @@ using namespace std;
 #define ESTACAO 'S'
 #define END '\n'
 
-int sujeira, movimentos, coluna, linha;
+long long unsigned int movimentos;
+int sujeira, coluna, linha;
 pair<int, int> inicio, fim;
 char caminho[WHMAX][WHMAX];
 bool visited[WHMAX][WHMAX];
